@@ -169,6 +169,7 @@ def project_card(profile: dict[str, Any], slug: str, theme: str, mobile: bool) -
     )
     canvas = Canvas(w, h, theme, f"{title} / Product concept", description, profile)
     eyebrow = "01 / EDTECH · IN PROGRESS" if is_dsie else "02 / SCHOOL SYSTEM · IN PROGRESS"
+    repository_caption = "Public repos: backend + frontend" if is_dsie else "Repository URL pending verification"
     if mobile:
         canvas.text(28, 42, eyebrow, 19, "muted", 700)
         canvas.text(28, 95, title, 40, weight=700)
@@ -183,7 +184,7 @@ def project_card(profile: dict[str, Any], slug: str, theme: str, mobile: bool) -
             dsie_diagram(canvas, 28, 239, True)
         else:
             plumier_diagram(canvas, 28, 239, True)
-        canvas.text(28, 390, "Repository URL pending verification", 21, "accent", 700)
+        canvas.text(28, 390, repository_caption, 21, "accent", 700)
     else:
         canvas.text(56, 63, eyebrow, 23, "muted", 700)
         canvas.text(56, 143, title, 62, weight=700)
@@ -197,7 +198,7 @@ def project_card(profile: dict[str, Any], slug: str, theme: str, mobile: bool) -
         canvas.text(56, 296, stack_line, 23, "muted")
         extra = "Next.js target · Infrastructure planned" if is_dsie else "Modules developed iteratively"
         canvas.text(56, 329, extra, 23, "muted")
-        canvas.text(56, 381, "Repository URL pending verification", 25, "accent", 700)
+        canvas.text(56, 381, repository_caption, 25, "accent", 700)
         if is_dsie:
             dsie_diagram(canvas, 602, 68, False)
         else:

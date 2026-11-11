@@ -16,7 +16,7 @@ I'm **Tiayon Malik**, a junior web developer based in Cameroon. I focus on backe
   <img src="assets/projects/dsie-learn-light.svg" alt="DSIE Learn — original concept diagram for a learning platform for digital skills. Python and Django backend in progress; frontend and deployment choices are planned, not represented as deployed." width="100%">
 </picture>
 
-**DSIE Learn** — A professional digital-skills learning platform being shaped for Cameroon, with an ambition to serve Francophone Africa. Its Django backend is in progress; Next.js, React, TypeScript, Tailwind CSS, Docker Compose and cloud services are architectural targets, not deployment claims. The known repository names are intentionally not linked until their public URLs are verified.
+**DSIE Learn** — A professional digital-skills learning platform being shaped for Cameroon, with an ambition to serve Francophone Africa. Its [Django backend](https://github.com/malikskills/dsie-learn-backend) is in progress, and its [frontend repository](https://github.com/malikskills/dsie-learn-frontend) is public. Next.js, React, TypeScript, Tailwind CSS, Docker Compose and cloud services are architectural targets, not deployment claims.
 
 <picture>
   <source media="(max-width: 760px) and (prefers-color-scheme: dark)" srcset="assets/projects/plumier-mobile-dark.svg">

@@ -68,7 +68,14 @@ def validate_profile_data(profile: object) -> dict:
     assert labels == {"Practiced foundations", "Used in project work", "Currently learning", "Areas of deeper study"}
     assert len(profile["projects"]) == 2
     for project in profile["projects"]:
-        assert project["repository"] is None or str(project["repository"]).startswith("https://github.com/")
+        assert "repositories" in project, "project repositories are required"
+        repositories = project["repositories"]
+        assert isinstance(repositories, list), "project repositories must be a list"
+        for repository in repositories:
+            assert isinstance(repository, dict), "project repository entries must be objects"
+            assert isinstance(repository.get("label"), str) and repository["label"].strip(), "project repository label must be present"
+            assert str(repository.get("url", "")).startswith("https://github.com/"), "project repository URL must be a GitHub URL"
+            assert repository.get("visibility") in {"public", "private"}, "project repository visibility must be public or private"
         assert project["repository_verification"] in {"verified_public", "pending_public_verification"}
     assert {item["slug"] for item in profile["projects"]} == {"dsie-learn", "plumier"}
     for theme in THEMES:
@@ -97,7 +104,13 @@ def validate_readme(profile: dict) -> ReadmeMedia:
     assert profile["identity"]["name"] in readme
     assert profile["identity"]["github_url"] in readme
     for project in profile["projects"]:
-        if project["repository_verification"] != "verified_public":
+        public_repositories = [item for item in project.get("repositories", []) if item["visibility"] == "public"]
+        private_repositories = [item for item in project.get("repositories", []) if item["visibility"] == "private"]
+        for repository in public_repositories:
+            assert repository["url"] in readme, f"Verified public repository must be linked: {repository['label']}"
+        for repository in private_repositories:
+            assert repository["url"] not in readme, f"Private repository must not be linked: {repository['label']}"
+        if not public_repositories:
             for candidate in project["repository_candidates"]:
                 assert f"/{candidate}" not in readme, f"Unverified repository must not be linked: {candidate}"
     parser = ReadmeMedia()

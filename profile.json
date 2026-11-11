@@ -50,9 +50,20 @@
       "name": "DSIE Learn",
       "organization": "DSIE — Digital Solutions, Innovation and Engineering",
       "kind": "Learning Management System / EdTech",
-      "repository": null,
+      "repositories": [
+        {
+          "label": "Backend",
+          "url": "https://github.com/malikskills/dsie-learn-backend",
+          "visibility": "public"
+        },
+        {
+          "label": "Frontend",
+          "url": "https://github.com/malikskills/dsie-learn-frontend",
+          "visibility": "public"
+        }
+      ],
       "repository_candidates": ["dsie-learn-backend", "dsie-learn-frontend"],
-      "repository_verification": "pending_public_verification",
+      "repository_verification": "verified_public",
       "summary": "A professional digital-skills learning platform conceived for Cameroon, with an ambition to serve Francophone Africa.",
       "status": "Backend and product architecture are in progress. The frontend and infrastructure choices below are planned, not presented as deployed.",
       "backend": ["Python", "Django", "Django REST Framework", "PostgreSQL", "Celery", "Redis"],
@@ -64,7 +75,7 @@
       "name": "Plumier",
       "organization": null,
       "kind": "School Management System",
-      "repository": null,
+      "repositories": [],
       "repository_candidates": ["Plumier"],
       "repository_verification": "pending_public_verification",
       "summary": "A modular school and academic management application for a primary school in Cameroon.",
