@@ -111,7 +111,7 @@ def hero(profile: dict[str, Any], mobile: bool = False) -> str:
     w, h = (480, 320) if mobile else (1200, 400)
     canvas = Canvas(
         w, h, "dark", "MALIK SKILLS / Engineering Reliable Digital Solutions",
-        "Tiayon Malik, junior web developer in Cameroon, focuses on backend-oriented development with Python and Django. An M monogram connects software-system nodes.",
+        "Tiayon Malik, junior web developer in Cameroon, focuses on backend-oriented development with Python and Django. A clear MS monogram connects software-system nodes.",
         profile,
     )
     canvas.raw(
@@ -143,8 +143,8 @@ def hero(profile: dict[str, Any], mobile: bool = False) -> str:
 def monogram(canvas: Canvas, x: int, y: int, scale: float) -> None:
     canvas.raw(f'<g transform="translate({x} {y}) scale({scale})">')
     canvas.rect(0, 0, 126, 126, "surface", "secondary", 24)
-    canvas.path("M28 94V32L51 73L73 32V94M28 69H73M88 33H101V94H88", "accent", 7)
-    canvas.dot(105, 25, 4, "mint")
+    canvas.text(63, 84, "MS", 58, "accent", 700, "middle")
+    canvas.dot(108, 19, 4, "mint")
     canvas.raw("</g>")
 
 
@@ -421,9 +421,9 @@ def unavailable_activity(canvas: Canvas, mobile: bool, snapshot: dict[str, Any])
 
 
 def logo(profile: dict[str, Any]) -> str:
-    canvas = Canvas(128, 128, "dark", "MALIK SKILLS monogram", "M monogram for MALIK SKILLS.", profile)
-    canvas.path("M29 96V32L52 74L75 32V96M29 70H75M90 33H103V96H90", "accent", 7)
-    canvas.dot(104, 24, 4, "mint")
+    canvas = Canvas(128, 128, "dark", "MALIK SKILLS monogram", "Clear MS monogram for MALIK SKILLS.", profile)
+    canvas.text(64, 85, "MS", 58, "accent", 700, "middle")
+    canvas.dot(108, 19, 4, "mint")
     return canvas.finish()
 
 

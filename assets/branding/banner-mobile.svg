@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-labelledby="title desc">
 <title id="title">MALIK SKILLS / Engineering Reliable Digital Solutions</title>
-<desc id="desc">Tiayon Malik, junior web developer in Cameroon, focuses on backend-oriented development with Python and Django. An M monogram connects software-system nodes.</desc>
+<desc id="desc">Tiayon Malik, junior web developer in Cameroon, focuses on backend-oriented development with Python and Django. A clear MS monogram connects software-system nodes.</desc>
 <rect x="1" y="1" width="478" height="318" rx="24" fill="#0A1712" stroke="#2B4A38" stroke-width="2"/>
 <defs><linearGradient id="signal" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#45C47A"/><stop offset="1" stop-color="#1C8C58"/></linearGradient></defs>
 <text x="28" y="54" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" text-anchor="start" fill="#F3F7F4">MALIK SKILLS</text>
@@ -12,7 +12,7 @@
 <path d="M28 281H138" fill="none" stroke="#45C47A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <g transform="translate(350 53) scale(0.65)">
 <rect x="0" y="0" width="126" height="126" rx="24" fill="#11241B" stroke="#1C8C58" stroke-width="2"/>
-<path d="M28 94V32L51 73L73 32V94M28 69H73M88 33H101V94H88" fill="none" stroke="#45C47A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="105" cy="25" r="4" fill="#9BE7BE"/>
+<text x="63" y="84" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" text-anchor="middle" fill="#45C47A">MS</text>
+<circle cx="108" cy="19" r="4" fill="#9BE7BE"/>
 </g>
 </svg>
