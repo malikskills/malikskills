@@ -144,8 +144,8 @@ class SnakePreparationTests(unittest.TestCase):
 class FullProjectValidationTests(unittest.TestCase):
     def test_repository_passes_its_offline_validator(self):
         svg_count, picture_sources = validate()
-        self.assertEqual(svg_count, 28)
-        self.assertEqual(picture_sources, 26)
+        self.assertEqual(svg_count, 31)
+        self.assertEqual(picture_sources, 29)
 
 
 if __name__ == "__main__":

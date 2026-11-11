@@ -428,6 +428,17 @@ def logo(profile: dict[str, Any]) -> str:
     return canvas.finish()
 
 
+def contact_card(profile: dict[str, Any], channel: str, value: str, description: str) -> str:
+    canvas = Canvas(1200, 92, "dark", f"MALIK SKILLS / {channel}", description, profile, framed=False)
+    canvas.rect(1, 1, 1198, 90, "surface", "accent", 18)
+    canvas.rect(20, 21, 132, 50, "accent", "accent", 25)
+    canvas.text(86, 53, channel.upper(), 16, "fg", 700, "middle")
+    canvas.text(177, 35, "CONTACT & COMMUNITY", 15, "muted", 700)
+    canvas.text(177, 66, value, 26, "fg", 700)
+    canvas.path("M1132 46H1167M1152 31L1167 46L1152 61", "accent", 3)
+    return canvas.finish()
+
+
 def engineering_map(profile: dict[str, Any]) -> str:
     canvas = Canvas(
         560, 160, "dark", "Reliable solution map",
@@ -452,6 +463,13 @@ def build_editorial_assets(root: Path = ROOT) -> None:
     (brand / "banner.svg").write_text(hero(profile), encoding="utf-8")
     (brand / "banner-mobile.svg").write_text(hero(profile, True), encoding="utf-8")
     (brand / "logo.svg").write_text(logo(profile), encoding="utf-8")
+    contacts = profile["contacts"]
+    (brand / "contact-email.svg").write_text(
+        contact_card(profile, "Email", contacts["email"], "Send an email to Tiayon Malik."), encoding="utf-8")
+    (brand / "contact-whatsapp.svg").write_text(
+        contact_card(profile, "WhatsApp", contacts["whatsapp_display"], "Start a WhatsApp conversation with Tiayon Malik."), encoding="utf-8")
+    (brand / "contact-youtube.svg").write_text(
+        contact_card(profile, "YouTube", "MALIK SKILLS YouTube channel", "Visit the MALIK SKILLS YouTube channel."), encoding="utf-8")
     (brand / "engineering-map.svg").write_text(engineering_map(profile), encoding="utf-8")
     for theme in ("light", "dark"):
         for mobile in (False, True):

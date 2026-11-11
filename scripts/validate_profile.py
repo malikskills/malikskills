@@ -64,6 +64,8 @@ def validate_profile_data(profile: object) -> dict:
     assert contacts["github"] == identity["github_url"]
     assert isinstance(contacts["email"], str) and re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", contacts["email"]), "A valid contact email is required"
     assert isinstance(contacts.get("youtube"), str) and contacts["youtube"].startswith("https://www.youtube.com/"), "A valid YouTube channel URL is required"
+    assert contacts.get("whatsapp") == "https://wa.me/237672886334", "Configured WhatsApp URL must remain correct"
+    assert contacts.get("whatsapp_display") == "+237 672 886 334", "Configured WhatsApp display number must remain correct"
     assert len(profile["technology_groups"]) == 4
     labels = {group["label"] for group in profile["technology_groups"]}
     assert labels == {"Practiced foundations", "Used in project work", "Currently learning", "Areas of deeper study"}
@@ -106,6 +108,7 @@ def validate_readme(profile: dict) -> ReadmeMedia:
     assert profile["identity"]["github_url"] in readme
     assert f"mailto:{profile['contacts']['email']}" in readme, "README must link the configured contact email"
     assert profile["contacts"]["youtube"] in readme, "README must link the configured YouTube channel"
+    assert profile["contacts"]["whatsapp"] in readme, "README must link the configured WhatsApp contact"
     for project in profile["projects"]:
         public_repositories = [item for item in project.get("repositories", []) if item["visibility"] == "public"]
         private_repositories = [item for item in project.get("repositories", []) if item["visibility"] == "private"]
@@ -118,8 +121,8 @@ def validate_readme(profile: dict) -> ReadmeMedia:
                 assert f"/{candidate}" not in readme, f"Unverified repository must not be linked: {candidate}"
     parser = ReadmeMedia()
     parser.feed(readme)
-    assert parser.images == 7, "Expected hero, two projects, stack, approach, activity and calendar images"
-    assert len(parser.paths) == 26, "Responsive sources or theme variants are missing"
+    assert parser.images == 10, "Expected hero, two projects, stack, approach, activity, calendar and three contact cards"
+    assert len(parser.paths) == 29, "Responsive sources or theme variants are missing"
     assert readme.count("(max-width: 760px)") == 11, "Mobile picture sources must cover every responsive composition"
     assert readme.count("prefers-color-scheme: dark") == 12, "Dark theme sources must cover all theme-aware sections"
     assert "prefers-reduced-motion: reduce" in readme, "Contribution calendar needs a reduced-motion source"
@@ -155,6 +158,7 @@ def validate_svg(path: Path) -> None:
 def validate_asset_matrix() -> list[Path]:
     expected = {
         "assets/branding/banner.svg", "assets/branding/banner-mobile.svg", "assets/branding/logo.svg", "assets/branding/engineering-map.svg",
+        "assets/branding/contact-email.svg", "assets/branding/contact-whatsapp.svg", "assets/branding/contact-youtube.svg",
         "assets/generated/activity.json", "assets/generated/activity.md",
     }
     for component in ("stack", "approach"):
@@ -171,7 +175,7 @@ def validate_asset_matrix() -> list[Path]:
     absent = sorted(item for item in expected if not (ROOT / item).is_file())
     assert not absent, f"Required generated or editorial assets missing: {', '.join(absent)}"
     svgs = sorted((ROOT / "assets").rglob("*.svg"))
-    assert len(svgs) == 28, f"Expected exactly 28 SVG assets, found {len(svgs)}"
+    assert len(svgs) == 31, f"Expected exactly 31 SVG assets, found {len(svgs)}"
     for path in svgs:
         validate_svg(path)
     return svgs

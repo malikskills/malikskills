@@ -78,8 +78,18 @@ Python and Django are my main area of practice. The map distinguishes direct pra
 **Have a problem worth solving?**<br>
 Let's understand it and build a reliable solution.
 
-> 🟩 **Contact & community**
->
-> [✉️ workcmtiayon@gmail.com](mailto:workcmtiayon@gmail.com) · [▶️ YouTube channel ↗](https://www.youtube.com/channel/UC0U6iFPFniKXwIG14eeDa3w)
+<sub>🟩 CONTACT &amp; COMMUNITY</sub>
+
+<a href="mailto:workcmtiayon@gmail.com">
+  <img src="assets/branding/contact-email.svg" alt="Send an email to workcmtiayon@gmail.com" width="100%">
+</a>
+
+<a href="https://wa.me/237672886334">
+  <img src="assets/branding/contact-whatsapp.svg" alt="Start a WhatsApp conversation with Tiayon Malik at +237 672 886 334" width="100%">
+</a>
+
+<a href="https://www.youtube.com/channel/UC0U6iFPFniKXwIG14eeDa3w">
+  <img src="assets/branding/contact-youtube.svg" alt="Visit the MALIK SKILLS YouTube channel" width="100%">
+</a>
 
 [GitHub](https://github.com/malikskills)
