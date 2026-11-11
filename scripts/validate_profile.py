@@ -62,7 +62,8 @@ def validate_profile_data(profile: object) -> dict:
     assert len(profile["about"]) == 4 and all(isinstance(line, str) and line for line in profile["about"])
     contacts = profile["contacts"]
     assert contacts["github"] == identity["github_url"]
-    assert contacts["email"] is None, "Do not invent a contact email"
+    assert isinstance(contacts["email"], str) and re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", contacts["email"]), "A valid contact email is required"
+    assert isinstance(contacts.get("youtube"), str) and contacts["youtube"].startswith("https://www.youtube.com/"), "A valid YouTube channel URL is required"
     assert len(profile["technology_groups"]) == 4
     labels = {group["label"] for group in profile["technology_groups"]}
     assert labels == {"Practiced foundations", "Used in project work", "Currently learning", "Areas of deeper study"}
@@ -103,6 +104,8 @@ def validate_readme(profile: dict) -> ReadmeMedia:
     assert sections == EXPECTED_SECTIONS, "README must keep the banner and six editorial sections"
     assert profile["identity"]["name"] in readme
     assert profile["identity"]["github_url"] in readme
+    assert f"mailto:{profile['contacts']['email']}" in readme, "README must link the configured contact email"
+    assert profile["contacts"]["youtube"] in readme, "README must link the configured YouTube channel"
     for project in profile["projects"]:
         public_repositories = [item for item in project.get("repositories", []) if item["visibility"] == "public"]
         private_repositories = [item for item in project.get("repositories", []) if item["visibility"] == "private"]

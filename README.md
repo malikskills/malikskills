@@ -78,4 +78,8 @@ Python and Django are my main area of practice. The map distinguishes direct pra
 **Have a problem worth solving?**<br>
 Let's understand it and build a reliable solution.
 
+> 🟩 **Contact & community**
+>
+> [✉️ workcmtiayon@gmail.com](mailto:workcmtiayon@gmail.com) · [▶️ YouTube channel ↗](https://www.youtube.com/channel/UC0U6iFPFniKXwIG14eeDa3w)
+
 [GitHub](https://github.com/malikskills)

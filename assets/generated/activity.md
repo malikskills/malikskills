@@ -2,13 +2,14 @@
 
 Updated **2026-11-11 UTC** from the GitHub REST API.
 
-- Original public repositories: **9**.
-- Distinct primary languages: **2**.
+- Original public repositories: **11**.
+- Distinct primary languages: **3**.
 
 | Primary language | Repositories |
 | --- | ---: |
-| Python | 7 |
+| Python | 8 |
 | HTML | 2 |
+| TypeScript | 1 |
 
 Public repositories owned by the configured account; forks are excluded and archived originals are included.
 
