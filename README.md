@@ -63,13 +63,11 @@ Python and Django are my main area of practice. The map distinguishes direct pra
 [Snapshot & metric definitions](assets/generated/activity.md) · [GitHub repositories](https://github.com/malikskills?tab=repositories)
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/generated/contributions-dark.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/generated/contributions-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/snake-dark.svg">
-  <img src="assets/generated/snake-light.svg" alt="GitHub contribution calendar. The initial artwork is an honest setup notice until GitHub Actions generates the first calendar; reduced motion selects a static calendar." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/contributions-dark.svg">
+  <img src="assets/generated/contributions-light.svg" alt="GitHub contribution calendar, refreshed from the account's public contribution activity." width="100%">
 </picture>
 
-<sub>Daily refresh is configured. Last valid activity images are retained when a refresh fails; the first contribution calendar needs a successful GitHub Actions run.</sub>
+<sub>Daily refresh is configured. Last valid activity images are retained when a refresh fails.</sub>
 
 ## Connect
 

@@ -103,10 +103,10 @@ def validate_readme(profile: dict) -> ReadmeMedia:
     parser = ReadmeMedia()
     parser.feed(readme)
     assert parser.images == 7, "Expected hero, two projects, stack, approach, activity and calendar images"
-    assert len(parser.paths) == 26, "Responsive sources or theme variants are missing"
+    assert len(parser.paths) == 24, "Responsive sources or theme variants are missing"
     assert readme.count("(max-width: 760px)") == 11, "Mobile picture sources must cover every responsive composition"
-    assert readme.count("prefers-color-scheme: dark") == 12, "Dark theme sources must cover all theme-aware sections"
-    assert "prefers-reduced-motion: reduce" in readme, "Contribution calendar needs a reduced-motion source"
+    assert readme.count("prefers-color-scheme: dark") == 11, "Dark theme sources must cover all theme-aware sections"
+    assert "contributions-light.svg" in readme and "contributions-dark.svg" in readme, "Contribution calendar needs light and dark sources"
     links = re.findall(r"\]\(([^)]+)\)", readme)
     for reference in parser.paths + links:
         target = local_target(reference)
