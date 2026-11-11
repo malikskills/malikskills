@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="192" viewBox="0 0 880 192" role="img" aria-labelledby="title desc">
+<title id="title">GitHub contribution calendar awaiting first trusted refresh</title>
+<desc id="desc">No contribution data is shown. GitHub Actions will generate this calendar after the first successful authenticated run.</desc>
+<rect x="1" y="1" width="878" height="190" rx="18" fill="#F5F8F4" stroke="#C6D9CC" stroke-width="2"/>
+<path d="M70 132H810" fill="none" stroke="#C6D9CC" stroke-width="2"/>
+<circle cx="112" cy="94" r="26" fill="#FFFFFF" stroke="#167A46" stroke-width="2"/>
+<path d="M101 94H123M112 83V105" fill="none" stroke="#167A46" stroke-width="3" stroke-linecap="round"/>
+<text x="164" y="79" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#10261A">Contribution calendar awaiting first refresh</text>
+<text x="164" y="111" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#466254">GitHub Actions will replace this notice with a real contribution calendar.</text>
+<text x="70" y="166" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#466254">Run “Refresh profile artwork” after publishing; reduced motion will then use a static calendar.</text>
+</svg>

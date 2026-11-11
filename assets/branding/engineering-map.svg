@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160" role="img" aria-labelledby="title desc">
+<title id="title">Reliable solution map</title>
+<desc id="desc">Interfaces feed backend services and data. Delivery foundations support the system. This is a focus map, not a skill rating.</desc>
+<rect x="1" y="1" width="558" height="158" rx="24" fill="#0A1712" stroke="#2B4A38" stroke-width="2"/>
+<path d="M154 54H211M349 54H406M84 83V116H476V83M280 83V116" fill="none" stroke="#2B4A38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="22" y="26" width="132" height="56" rx="8" fill="#11241B" stroke="#2B4A38" stroke-width="2"/>
+<text x="88" y="61" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#F3F7F4">Interfaces</text>
+<rect x="211" y="26" width="138" height="56" rx="8" fill="#11241B" stroke="#45C47A" stroke-width="2"/>
+<text x="280" y="61" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#F3F7F4">Backend</text>
+<rect x="406" y="26" width="132" height="56" rx="8" fill="#11241B" stroke="#2B4A38" stroke-width="2"/>
+<text x="472" y="61" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#F3F7F4">Data</text>
+<text x="280" y="144" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#A8BBB0">Reliable delivery foundations</text>
+<circle cx="182" cy="54" r="3" fill="#45C47A"/>
+<circle cx="377" cy="54" r="3" fill="#45C47A"/>
+<circle cx="280" cy="116" r="3" fill="#9BE7BE"/>
+</svg>

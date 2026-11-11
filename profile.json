@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "brand": "MALIK DEV",
+    "name": "Tiayon Malik",
+    "github_username": "workcmtiayon-arch",
+    "github_url": "https://github.com/workcmtiayon-arch",
+    "location": "Cameroon",
+    "role": "Junior Web Developer",
+    "positioning": "Backend-oriented development · Python & Django",
+    "tagline": "Engineering Reliable Digital Solutions"
+  },
+  "about": [
+    "Tiayon Malik is a junior web developer based in Cameroon.",
+    "He focuses on backend-oriented development with Python and Django.",
+    "He is growing toward software architecture, reliable infrastructure and DevOps practices.",
+    "His goal is to build professional solutions that are useful, maintainable and ready to evolve."
+  ],
+  "contacts": {
+    "github": "https://github.com/workcmtiayon-arch",
+    "email": null,
+    "linkedin": null,
+    "portfolio": null
+  },
+  "technology_groups": [
+    {
+      "label": "Practiced foundations",
+      "intent": "Technologies used directly while building and learning.",
+      "items": ["Python", "Django", "PostgreSQL", "PHP", "HTML", "CSS", "JavaScript", "Git", "GitHub", "Linux", "Ubuntu 24.04"]
+    },
+    {
+      "label": "Used in project work",
+      "intent": "Technologies applied or configured in project contexts; scope varies by project.",
+      "items": ["Django REST Framework", "REST APIs", "Docker", "Docker Compose", "Django Allauth"]
+    },
+    {
+      "label": "Currently learning",
+      "intent": "Technologies being explored and not represented as professional mastery.",
+      "items": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redis", "Celery", "Nginx"]
+    },
+    {
+      "label": "Areas of deeper study",
+      "intent": "Engineering interests, not claimed certifications or mastery levels.",
+      "items": ["Software Architecture", "UML", "Backend Engineering", "DevOps", "CI/CD", "Cloud Infrastructure", "Distributed Systems", "Networking", "AI Integration", "System Design", "Linux Administration"]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "dsie-learn",
+      "name": "DSIE Learn",
+      "organization": "DSIE — Digital Solutions, Innovation and Engineering",
+      "kind": "Learning Management System / EdTech",
+      "repository": null,
+      "repository_candidates": ["dsie-learn-backend", "dsie-learn-frontend"],
+      "repository_verification": "pending_public_verification",
+      "summary": "A professional digital-skills learning platform conceived for Cameroon, with an ambition to serve Francophone Africa.",
+      "status": "Backend and product architecture are in progress. The frontend and infrastructure choices below are planned, not presented as deployed.",
+      "backend": ["Python", "Django", "Django REST Framework", "PostgreSQL", "Celery", "Redis"],
+      "frontend_target": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "infrastructure_target": ["Docker Compose", "VPS", "Cloudflare", "S3-compatible storage", "Cloudflare Stream"]
+    },
+    {
+      "slug": "plumier",
+      "name": "Plumier",
+      "organization": null,
+      "kind": "School Management System",
+      "repository": null,
+      "repository_candidates": ["Plumier"],
+      "repository_verification": "pending_public_verification",
+      "summary": "A modular school and academic management application for a primary school in Cameroon.",
+      "status": "Core modules are being developed iteratively; planned capabilities are not represented as completed features.",
+      "stack": ["Python", "Django", "PostgreSQL", "Django Allauth", "HTML", "CSS", "JavaScript"],
+      "planned_or_in_progress": ["Students", "Teachers", "Classes", "School levels", "Attendance", "Finance", "Communication", "Users", "Permissions", "Authentication"]
+    }
+  ],
+  "colors": {
+    "dark": {
+      "background": "#0A1712",
+      "surface": "#11241B",
+      "raised": "#193426",
+      "border": "#2B4A38",
+      "foreground": "#F3F7F4",
+      "muted": "#A8BBB0",
+      "accent": "#45C47A",
+      "accent_secondary": "#1C8C58",
+      "mint": "#9BE7BE"
+    },
+    "light": {
+      "background": "#F5F8F4",
+      "surface": "#FFFFFF",
+      "raised": "#E1EEE6",
+      "border": "#C6D9CC",
+      "foreground": "#10261A",
+      "muted": "#466254",
+      "accent": "#167A46",
+      "accent_secondary": "#0F6237",
+      "mint": "#76C99B"
+    }
+  },
+  "illustrations": {
+    "desktop_width": 1200,
+    "mobile_width": 480,
+    "mobile_breakpoint_px": 760,
+    "font_family": "Arial, Helvetica, sans-serif",
+    "project_art_note": "Original conceptual product diagrams; they are not application screenshots."
+  },
+  "statistics": {
+    "api": "https://api.github.com",
+    "scope": "Public repositories owned by the configured account; forks are excluded and archived originals are included.",
+    "preserve_last_success": true,
+    "token_environment_variables": ["GH_TOKEN", "GITHUB_TOKEN"],
+    "generated_directory": "assets/generated"
+  },
+  "snake": {
+    "provider": "Platane/snk/svg-only",
+    "output_directory": "assets/generated",
+    "reduced_motion_asset_prefix": "contributions-",
+    "requires_github_actions_token": true
+  }
+}

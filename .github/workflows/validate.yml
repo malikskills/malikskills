@@ -1,0 +1,25 @@
+name: Validate profile
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "assets/generated/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Run unit and regression tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Validate profile sources and generated assets
+        run: python3 scripts/validate_profile.py

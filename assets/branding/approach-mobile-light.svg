@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" role="img" aria-labelledby="title desc">
+<title id="title">Discover → Analyze → Architect → Build → Validate → Deliver</title>
+<desc id="desc">Six-step working method: understand a need, examine constraints, shape the design, implement deliberately, validate behaviour and deliver safely.</desc>
+<rect x="0" y="0" width="480" height="360" rx="0" fill="#F5F8F4" stroke="#F5F8F4" stroke-width="0"/>
+<path d="M240 25V333" fill="none" stroke="#C6D9CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="48" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#167A46">01</text>
+<g transform="translate(175 28) scale(0.62)">
+<path d="M4 4L35 14L24 35L4 4ZM13 13L24 24" fill="none" stroke="#167A46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="28" y="88" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#10261A">Discover</text>
+<text x="28" y="114" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#466254">Understand needs</text>
+<text x="254" y="48" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#167A46">02</text>
+<g transform="translate(401 28) scale(0.62)">
+<path d="M3 35V20H11V35M16 35V8H24V35M29 35V14H37V35" fill="none" stroke="#167A46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="254" y="88" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#10261A">Analyze</text>
+<text x="254" y="114" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#466254">Map constraints</text>
+<text x="28" y="160" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#167A46">03</text>
+<g transform="translate(175 140) scale(0.62)">
+<path d="M12 1H26V13H12ZM1 26H13V38H1ZM26 26H38V38H26ZM19 13V20H7V26M19 20H32V26" fill="none" stroke="#167A46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="28" y="200" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#10261A">Architect</text>
+<text x="28" y="226" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#466254">Shape boundaries</text>
+<text x="254" y="160" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#167A46">04</text>
+<g transform="translate(401 140) scale(0.62)">
+<path d="M11 4L2 19L11 34M28 4L37 19L28 34M23 1L15 37" fill="none" stroke="#167A46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="254" y="200" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#10261A">Build</text>
+<text x="254" y="226" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#466254">Implement clearly</text>
+<text x="28" y="272" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#167A46">05</text>
+<g transform="translate(175 252) scale(0.62)">
+<path d="M3 20L14 31L36 5" fill="none" stroke="#167A46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="28" y="312" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#10261A">Validate</text>
+<text x="28" y="338" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#466254">Test behaviour</text>
+<text x="254" y="272" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#167A46">06</text>
+<g transform="translate(401 252) scale(0.62)">
+<path d="M3 35H37M20 28V2M8 14L20 2L32 14" fill="none" stroke="#167A46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="254" y="312" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#10261A">Deliver</text>
+<text x="254" y="338" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#466254">Release carefully</text>
+</svg>

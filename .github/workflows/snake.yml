@@ -1,0 +1,87 @@
+name: Refresh profile artwork
+
+on:
+  schedule:
+    - cron: "23 5 * * *"
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Commit generated artwork to main after successful validation"
+        required: true
+        default: false
+        type: boolean
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snake.yml"
+      - "scripts/**"
+      - "profile.json"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: malik-dev-profile-artwork
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.repository == 'workcmtiayon-arch/workcmtiayon-arch' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Generate verified public repository snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/generate_activity.py
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: workcmtiayon-arch
+          github_token: ${{ github.token }}
+          outputs: |
+            assets/generated/snake-light.svg?color_snake=%23167A46&color_dots=%23E1EEE6,%23B7E4C7,%2376C99B,%2345C47A,%230F6237
+            assets/generated/snake-dark.svg?palette=github-dark&color_snake=%2345C47A&color_dots=%2322352A,%232B4A38,%231C8C58,%2345C47A,%239BE7BE
+      - name: Prepare accessible assets and validate their contents
+        run: |
+          python3 scripts/prepare_snake.py
+          python3 -m unittest discover -s tests -v
+          python3 scripts/validate_profile.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: malik-dev-profile-artwork
+          path: assets/generated/
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    needs: generate
+    if: >-
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.publish == 'true') ||
+      (github.event_name == 'schedule' && vars.PROFILE_AUTO_COMMIT == 'true')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: malik-dev-profile-artwork
+          path: assets/generated/
+      - name: Commit only validated generated artwork
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- assets/generated/
+          if git diff --cached --quiet; then
+            echo "Artwork is already current."
+            exit 0
+          fi
+          git commit -m "chore: refresh profile artwork"
+          git push origin HEAD:main

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+<title id="title">MALIK DEV / Engineering Reliable Digital Solutions</title>
+<desc id="desc">Tiayon Malik, junior web developer in Cameroon, focuses on backend-oriented development with Python and Django. An M monogram connects software-system nodes.</desc>
+<rect x="1" y="1" width="1198" height="398" rx="24" fill="#0A1712" stroke="#2B4A38" stroke-width="2"/>
+<defs><linearGradient id="signal" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#45C47A"/><stop offset="1" stop-color="#1C8C58"/></linearGradient></defs>
+<text x="56" y="68" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#A8BBB0">MALIK DEV / BACKEND-ORIENTED DEVELOPMENT</text>
+<text x="52" y="184" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" text-anchor="start" fill="#F3F7F4">MALIK DEV</text>
+<text x="56" y="247" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="400" text-anchor="start" fill="#F3F7F4">Engineering Reliable Digital Solutions</text>
+<text x="56" y="324" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" text-anchor="start" fill="#A8BBB0">Junior Web Developer · Python &amp; Django · Cameroon</text>
+<path d="M56 364H696" fill="none" stroke="#2B4A38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56 364H190" fill="none" stroke="#45C47A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M752 76H817V164H861M1045 80V122H994M996 220H1111V300H1064M766 311H819V252H861" fill="none" stroke="#2B4A38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="730" y="54" width="44" height="44" rx="16" fill="#11241B" stroke="#2B4A38" stroke-width="2"/>
+<circle cx="752" cy="76" r="4" fill="#45C47A"/>
+<rect x="1023" y="58" width="44" height="44" rx="16" fill="#11241B" stroke="#2B4A38" stroke-width="2"/>
+<circle cx="1045" cy="80" r="4" fill="#9BE7BE"/>
+<rect x="1042" y="278" width="44" height="44" rx="16" fill="#11241B" stroke="#2B4A38" stroke-width="2"/>
+<circle cx="1064" cy="300" r="4" fill="#45C47A"/>
+<rect x="744" y="289" width="44" height="44" rx="16" fill="#11241B" stroke="#2B4A38" stroke-width="2"/>
+<circle cx="766" cy="311" r="4" fill="#9BE7BE"/>
+<circle cx="817" cy="164" r="4" fill="#45C47A"/>
+<circle cx="1111" cy="220" r="4" fill="#45C47A"/>
+<circle cx="819" cy="252" r="4" fill="#9BE7BE"/>
+<g transform="translate(861 132) scale(1.15)">
+<rect x="0" y="0" width="126" height="126" rx="24" fill="#11241B" stroke="#1C8C58" stroke-width="2"/>
+<path d="M28 94V32L51 73L73 32V94M28 69H73M88 33H101V94H88" fill="none" stroke="#45C47A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="105" cy="25" r="4" fill="#9BE7BE"/>
+</g>
+</svg>

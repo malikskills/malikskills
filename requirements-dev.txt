@@ -1,0 +1,3 @@
+# The generators use only the Python standard library.
+# Optional development test runner:
+pytest>=8.0,<10.0

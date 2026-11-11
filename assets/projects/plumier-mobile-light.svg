@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="420" viewBox="0 0 480 420" role="img" aria-labelledby="title desc">
+<title id="title">Plumier / Product concept</title>
+<desc id="desc">Original conceptual diagram for Plumier. It does not represent a deployed interface.</desc>
+<rect x="1" y="1" width="478" height="418" rx="24" fill="#F5F8F4" stroke="#C6D9CC" stroke-width="2"/>
+<text x="28" y="42" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#466254">02 / SCHOOL SYSTEM · IN PROGRESS</text>
+<text x="28" y="95" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" text-anchor="start" fill="#10261A">Plumier</text>
+<text x="28" y="140" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#10261A">School operations, modular.</text>
+<text x="28" y="173" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#10261A">Built to evolve carefully.</text>
+<text x="28" y="212" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#466254">Python · Django · PostgreSQL</text>
+<g transform="translate(28 239)">
+<rect x="0" y="0" width="424" height="106" rx="16" fill="#FFFFFF" stroke="#C6D9CC" stroke-width="2"/>
+<text x="17" y="27" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#466254">SCHOOL MODULES / CONCEPT</text>
+<rect x="18" y="50" width="118" height="35" rx="10" fill="#F5F8F4" stroke="#C6D9CC" stroke-width="2"/>
+<text x="77" y="73" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#10261A">People</text>
+<rect x="152" y="50" width="118" height="35" rx="10" fill="#F5F8F4" stroke="#C6D9CC" stroke-width="2"/>
+<text x="211" y="73" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#10261A">Classes</text>
+<rect x="286" y="50" width="118" height="35" rx="10" fill="#F5F8F4" stroke="#C6D9CC" stroke-width="2"/>
+<text x="345" y="73" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#10261A">Records</text>
+<path d="M136 67H151M270 67H285" fill="none" stroke="#167A46" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="28" y="390" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#167A46">Repository URL pending verification</text>
+</svg>

@@ -1,0 +1,7 @@
+{
+  "status": "unavailable",
+  "username": "workcmtiayon-arch",
+  "last_attempt": "2026-11-11T10:55:09Z",
+  "reason": "Initial local build has no GitHub API access (DNS resolution unavailable)",
+  "scope": "No repository or language counts are shown until a successful public GitHub API refresh."
+}

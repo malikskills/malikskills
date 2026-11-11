@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+<title id="title">Discover → Analyze → Architect → Build → Validate → Deliver</title>
+<desc id="desc">Six-step working method: understand a need, examine constraints, shape the design, implement deliberately, validate behaviour and deliver safely.</desc>
+<rect x="0" y="0" width="1200" height="260" rx="0" fill="#0A1712" stroke="#0A1712" stroke-width="0"/>
+<path d="M80 104H1120" fill="none" stroke="#45C47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(65 28) scale(0.83)">
+<path d="M4 4L35 14L24 35L4 4ZM13 13L24 24" fill="none" stroke="#45C47A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle cx="80" cy="104" r="20" fill="#11241B"/>
+<circle cx="80" cy="104" r="5" fill="#45C47A"/>
+<text x="109" y="78" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#45C47A">01</text>
+<text x="56" y="168" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#F3F7F4">Discover</text>
+<text x="56" y="209" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#A8BBB0">Understand needs</text>
+<g transform="translate(249 28) scale(0.83)">
+<path d="M3 35V20H11V35M16 35V8H24V35M29 35V14H37V35" fill="none" stroke="#45C47A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle cx="264" cy="104" r="20" fill="#11241B"/>
+<circle cx="264" cy="104" r="5" fill="#45C47A"/>
+<text x="293" y="78" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#45C47A">02</text>
+<text x="240" y="168" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#F3F7F4">Analyze</text>
+<text x="240" y="209" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#A8BBB0">Map constraints</text>
+<g transform="translate(433 28) scale(0.83)">
+<path d="M12 1H26V13H12ZM1 26H13V38H1ZM26 26H38V38H26ZM19 13V20H7V26M19 20H32V26" fill="none" stroke="#45C47A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle cx="448" cy="104" r="20" fill="#11241B"/>
+<circle cx="448" cy="104" r="5" fill="#45C47A"/>
+<text x="477" y="78" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#45C47A">03</text>
+<text x="424" y="168" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#F3F7F4">Architect</text>
+<text x="424" y="209" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#A8BBB0">Shape boundaries</text>
+<g transform="translate(617 28) scale(0.83)">
+<path d="M11 4L2 19L11 34M28 4L37 19L28 34M23 1L15 37" fill="none" stroke="#45C47A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle cx="632" cy="104" r="20" fill="#11241B"/>
+<circle cx="632" cy="104" r="5" fill="#45C47A"/>
+<text x="661" y="78" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#45C47A">04</text>
+<text x="608" y="168" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#F3F7F4">Build</text>
+<text x="608" y="209" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#A8BBB0">Implement clearly</text>
+<g transform="translate(801 28) scale(0.83)">
+<path d="M3 20L14 31L36 5" fill="none" stroke="#45C47A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle cx="816" cy="104" r="20" fill="#11241B"/>
+<circle cx="816" cy="104" r="5" fill="#45C47A"/>
+<text x="845" y="78" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#45C47A">05</text>
+<text x="792" y="168" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#F3F7F4">Validate</text>
+<text x="792" y="209" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#A8BBB0">Test behaviour</text>
+<g transform="translate(985 28) scale(0.83)">
+<path d="M3 35H37M20 28V2M8 14L20 2L32 14" fill="none" stroke="#45C47A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle cx="1000" cy="104" r="20" fill="#11241B"/>
+<circle cx="1000" cy="104" r="5" fill="#45C47A"/>
+<text x="1029" y="78" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#45C47A">06</text>
+<text x="976" y="168" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#F3F7F4">Deliver</text>
+<text x="976" y="209" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#A8BBB0">Release carefully</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+<title id="title">MALIK DEV monogram</title>
+<desc id="desc">M monogram for MALIK DEV.</desc>
+<rect x="1" y="1" width="126" height="126" rx="24" fill="#0A1712" stroke="#2B4A38" stroke-width="2"/>
+<path d="M29 96V32L52 74L75 32V96M29 70H75M90 33H103V96H90" fill="none" stroke="#45C47A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="104" cy="24" r="4" fill="#9BE7BE"/>
+</svg>
