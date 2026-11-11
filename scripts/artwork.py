@@ -169,7 +169,7 @@ def project_card(profile: dict[str, Any], slug: str, theme: str, mobile: bool) -
     )
     canvas = Canvas(w, h, theme, f"{title} / Product concept", description, profile)
     eyebrow = "01 / EDTECH · IN PROGRESS" if is_dsie else "02 / SCHOOL SYSTEM · IN PROGRESS"
-    repository_caption = "Public repos: backend + frontend" if is_dsie else "Repository URL pending verification"
+    repository_caption = "Backend ↗  ·  Frontend ↗" if is_dsie else "Repository URL pending verification"
     if mobile:
         canvas.text(28, 42, eyebrow, 19, "muted", 700)
         canvas.text(28, 95, title, 40, weight=700)
