@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline integrity checks for MALIK DEV profile sources and generated assets."""
+"""Offline integrity checks for MALIK SKILLS profile sources and generated assets."""
 from __future__ import annotations
 
 import json

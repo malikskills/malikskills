@@ -30,7 +30,7 @@ def _style_variables(css: str) -> tuple[dict[str, str], dict[str, str]]:
     return variables, classes
 
 
-def prepare(source: str, updated: str, brand: str = "MALIK DEV") -> tuple[str, str]:
+def prepare(source: str, updated: str, brand: str = "MALIK SKILLS") -> tuple[str, str]:
     """Return an accessible animated SVG plus a genuine static grid SVG.
 
     Unknown upstream markup is rejected so it cannot silently publish a blank or

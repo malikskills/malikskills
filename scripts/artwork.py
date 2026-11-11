@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Original, standard-library SVG artwork for the MALIK DEV profile.
+"""Original, standard-library SVG artwork for the MALIK SKILLS profile.
 
 The module is deliberately data-driven: profile.json owns wording, colours and
 layout constants, while this file owns drawing primitives and compositions.
@@ -110,7 +110,7 @@ def hero(profile: dict[str, Any], mobile: bool = False) -> str:
     identity = profile["identity"]
     w, h = (480, 320) if mobile else (1200, 400)
     canvas = Canvas(
-        w, h, "dark", "MALIK DEV / Engineering Reliable Digital Solutions",
+        w, h, "dark", "MALIK SKILLS / Engineering Reliable Digital Solutions",
         "Tiayon Malik, junior web developer in Cameroon, focuses on backend-oriented development with Python and Django. An M monogram connects software-system nodes.",
         profile,
     )
@@ -129,7 +129,7 @@ def hero(profile: dict[str, Any], mobile: bool = False) -> str:
         canvas.path("M28 281H138", "accent", 3)
         monogram(canvas, 350, 53, 0.65)
     else:
-        canvas.text(56, 68, "MALIK DEV / BACKEND-ORIENTED DEVELOPMENT", 23, "muted", 700)
+        canvas.text(56, 68, "MALIK SKILLS / BACKEND-ORIENTED DEVELOPMENT", 23, "muted", 700)
         canvas.text(52, 184, identity["brand"], 96, weight=700)
         canvas.text(56, 247, identity["tagline"], 37)
         canvas.text(56, 324, "Junior Web Developer · Python & Django · Cameroon", 27, "muted")
@@ -264,7 +264,7 @@ def plumier_diagram(canvas: Canvas, x: int, y: int, mobile: bool) -> None:
 def stack_map(profile: dict[str, Any], theme: str, mobile: bool) -> str:
     width, height = (480, 670) if mobile else (1200, 510)
     canvas = Canvas(
-        width, height, theme, "MALIK DEV / Technology landscape",
+        width, height, theme, "MALIK SKILLS / Technology landscape",
         "A candid technology landscape: practiced foundations, project-context tools, current learning and engineering interests. It is not a proficiency ranking.", profile,
     )
     cards = [
@@ -421,7 +421,7 @@ def unavailable_activity(canvas: Canvas, mobile: bool, snapshot: dict[str, Any])
 
 
 def logo(profile: dict[str, Any]) -> str:
-    canvas = Canvas(128, 128, "dark", "MALIK DEV monogram", "M monogram for MALIK DEV.", profile)
+    canvas = Canvas(128, 128, "dark", "MALIK SKILLS monogram", "M monogram for MALIK SKILLS.", profile)
     canvas.path("M29 96V32L52 74L75 32V96M29 70H75M90 33H103V96H90", "accent", 7)
     canvas.dot(104, 24, 4, "mint")
     return canvas.finish()
@@ -465,4 +465,4 @@ def build_editorial_assets(root: Path = ROOT) -> None:
 
 if __name__ == "__main__":
     build_editorial_assets()
-    print("Built MALIK DEV editorial SVG assets")
+    print("Built MALIK SKILLS editorial SVG assets")

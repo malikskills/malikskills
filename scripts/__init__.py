@@ -1,1 +1,1 @@
-"""Generation and validation tools for the MALIK DEV profile."""
+"""Generation and validation tools for the MALIK SKILLS profile."""

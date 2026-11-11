@@ -1,4 +1,4 @@
-# MALIK DEV design system
+# MALIK SKILLS design system
 
 ## Direction
 

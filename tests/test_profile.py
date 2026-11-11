@@ -128,7 +128,7 @@ class SnakePreparationTests(unittest.TestCase):
         self.assertEqual(rectangles[0].get("fill"), "#45C47A")
         self.assertNotIn("animation", static)
         self.assertIn("prefers-reduced-motion", animated)
-        self.assertIn("MALIK DEV GitHub contribution calendar", static)
+        self.assertIn("MALIK SKILLS GitHub contribution calendar", static)
 
     def test_unknown_snake_markup_is_rejected(self):
         with self.assertRaises(ValueError):

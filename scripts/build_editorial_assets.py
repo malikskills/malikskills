@@ -8,4 +8,4 @@ except ImportError:  # Script invocation: python3 scripts/build_editorial_assets
 
 if __name__ == "__main__":
     build_editorial_assets()
-    print("Built MALIK DEV editorial SVG assets")
+    print("Built MALIK SKILLS editorial SVG assets")

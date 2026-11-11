@@ -1,6 +1,6 @@
 <picture>
   <source media="(max-width: 760px)" srcset="assets/branding/banner-mobile.svg">
-  <img src="assets/branding/banner.svg" alt="MALIK DEV — Tiayon Malik, junior web developer in Cameroon, building reliable backend-oriented digital solutions." width="100%">
+  <img src="assets/branding/banner.svg" alt="MALIK SKILLS — Tiayon Malik, junior web developer in Cameroon, building reliable backend-oriented digital solutions." width="100%">
 </picture>
 
 ## About Me

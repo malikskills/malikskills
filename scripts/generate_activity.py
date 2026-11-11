@@ -39,7 +39,7 @@ def api_get(path: str) -> object:
     headers = {
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "malik-dev-profile-generator",
+        "User-Agent": "malik-skills-profile-generator",
     }
     if token:
         headers["Authorization"] = f"Bearer {token}"
