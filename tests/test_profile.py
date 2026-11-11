@@ -18,7 +18,7 @@ def repository(identifier, **changes):
         "name": f"repo-{identifier}",
         "private": False,
         "fork": False,
-        "owner": {"login": "workcmtiayon-arch"},
+        "owner": {"login": "malikskills"},
         "language": "Python",
     }
     row.update(changes)
@@ -32,7 +32,7 @@ class ActivityDataTests(unittest.TestCase):
             repository(4, owner={"login": "another-account"}),
         ]
         self.assertEqual(
-            public_repositories("workcmtiayon-arch", lambda _: rows),
+            public_repositories("malikskills", lambda _: rows),
             [{"name": "repo-1", "language": "Python"}],
         )
 
@@ -44,14 +44,14 @@ class ActivityDataTests(unittest.TestCase):
             calls.append(path)
             return pages[len(calls) - 1]
 
-        result = public_repositories("workcmtiayon-arch", fetch)
+        result = public_repositories("malikskills", fetch)
         self.assertEqual(len(result), 101)
         self.assertIn("page=2", calls[1])
 
     def test_summary_treats_unclassified_as_a_bucket_not_a_language(self):
         snapshot = summarize(
             [{"language": "Python"}, {"language": "Python"}, {"language": None}],
-            "workcmtiayon-arch", "2026-11-11",
+            "malikskills", "2026-11-11",
         )
         self.assertEqual(snapshot["repositories"], 3)
         self.assertEqual(snapshot["primary_languages"], 1)
@@ -59,14 +59,14 @@ class ActivityDataTests(unittest.TestCase):
 
     def test_api_failure_is_not_converted_to_zero_statistics(self):
         with self.assertRaises(RuntimeError):
-            public_repositories("workcmtiayon-arch", lambda _: (_ for _ in ()).throw(RuntimeError("offline")))
+            public_repositories("malikskills", lambda _: (_ for _ in ()).throw(RuntimeError("offline")))
 
     def test_invalid_username_is_rejected_before_network_access(self):
         with self.assertRaises(ValueError):
             public_repositories("-bad", lambda _: self.fail("fetch must not be called"))
 
     def test_rendered_success_assets_share_one_snapshot_and_escape_xml(self):
-        snapshot = summarize([{"language": "A&B"}], "workcmtiayon-arch", "2026-11-11")
+        snapshot = summarize([{"language": "A&B"}], "malikskills", "2026-11-11")
         profile = load_profile()
         rendered = render_files(snapshot, profile)
         for theme in ("light", "dark"):
@@ -78,14 +78,14 @@ class ActivityDataTests(unittest.TestCase):
                 self.assertIn("A&amp;B", rendered[name])
 
     def test_unavailable_state_has_no_counts_and_renders_valid_svg(self):
-        snapshot = unavailable_snapshot("workcmtiayon-arch", "Network unavailable during local bootstrap")
+        snapshot = unavailable_snapshot("malikskills", "Network unavailable during local bootstrap")
         self.assertNotIn("repositories", snapshot)
         self.assertIn("No verified statistics", activity(snapshot, False, False))
         ET.fromstring(activity(snapshot, True, True))
 
     def test_write_all_produces_complete_snapshot_set(self):
         profile = load_profile()
-        snapshot = summarize([], "workcmtiayon-arch", "2026-11-11")
+        snapshot = summarize([], "malikskills", "2026-11-11")
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary) / "generated"
             write_all(render_files(snapshot, profile), output)
@@ -99,7 +99,7 @@ class ActivityDataTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             (root / "profile.json").write_text(json.dumps({
-                "identity": {"github_username": "workcmtiayon-arch"},
+                "identity": {"github_username": "malikskills"},
                 "colors": load_profile()["colors"],
                 "illustrations": load_profile()["illustrations"],
             }))

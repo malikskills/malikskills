@@ -29,7 +29,7 @@ The layout uses 1200-unit desktop artboards and 480-unit mobile artboards. READM
 
 ## Live activity data
 
-`scripts/generate_activity.py` reads public REST metadata from `https://api.github.com`. It counts only repositories owned by `workcmtiayon-arch`, excludes forks, includes archived originals and groups one GitHub primary language per repository. It does not calculate commits, total bytes, proficiency or completion status.
+`scripts/generate_activity.py` reads public REST metadata from `https://api.github.com`. It counts only repositories owned by `malikskills`, excludes forks, includes archived originals and groups one GitHub primary language per repository. It does not calculate commits, total bytes, proficiency or completion status.
 
 For an authenticated local refresh, create a token through `gh auth login` or provide a token through the shell only:
 

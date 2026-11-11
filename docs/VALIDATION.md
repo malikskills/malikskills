@@ -62,7 +62,7 @@ git diff --check
 
 ## Hosted first run checklist
 
-1. Create the remote profile repository named exactly `workcmtiayon-arch` and push only when you choose to publish.
+1. Create the remote profile repository named exactly `malikskills` and push only when you choose to publish.
 2. In **Settings → Actions → General**, permit `GITHUB_TOKEN` write access only if you intend to authorize generated-art commits.
 3. Run **Refresh profile artwork** manually with `publish: false` first and inspect the artifact.
 4. Once the artifact is satisfactory, run it again with `publish: true`; alternatively set the `PROFILE_AUTO_COMMIT` Actions variable to `true` to authorize future scheduled commits.

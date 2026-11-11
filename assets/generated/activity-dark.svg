@@ -1,15 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
 <title id="title">Public GitHub / Repository snapshot</title>
-<desc id="desc">No verified GitHub snapshot is available yet. The dashboard intentionally omits counts rather than inventing statistics.</desc>
+<desc id="desc">Updated 2026-11-11 UTC. 9 public original repositories, forks excluded; 2 primary languages. Repository counts are not proficiency or code-volume measures.</desc>
 <rect x="1" y="1" width="1198" height="338" rx="24" fill="#0A1712" stroke="#2B4A38" stroke-width="2"/>
-<text x="56" y="53" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#A8BBB0">PUBLIC GITHUB / SNAPSHOT</text>
-<g transform="translate(56 102) scale(1.35)">
-<path d="M9 31H31C39 31 40 18 31 17C28 5 10 6 9 17C0 18 1 31 9 31" fill="none" stroke="#45C47A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<text x="126" y="133" font-family="Arial, Helvetica, sans-serif" font-size="39" font-weight="700" text-anchor="start" fill="#F3F7F4">No verified statistics published yet</text>
-<text x="56" y="188" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#A8BBB0">Repository counts and language distribution appear only after a successful GitHub REST API refresh.</text>
-<rect x="56" y="224" width="1088" height="67" rx="15" fill="#11241B" stroke="#45C47A" stroke-width="2"/>
-<text x="82" y="255" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#45C47A">AWAITING FIRST VERIFIED API SNAPSHOT</text>
-<text x="82" y="279" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#A8BBB0">Last attempt: 2026-11-11T10:55:09Z. Existing successful snapshots are retained if a later refresh fails.</text>
-<text x="56" y="322" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#A8BBB0">No values are inferred from profile text, planned projects or technology interests.</text>
+<text x="56" y="52" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#A8BBB0">PUBLIC GITHUB / VERIFIED SNAPSHOT</text>
+<text x="56" y="132" font-family="Arial, Helvetica, sans-serif" font-size="63" font-weight="700" text-anchor="start" fill="#F3F7F4">9</text>
+<text x="288" y="132" font-family="Arial, Helvetica, sans-serif" font-size="63" font-weight="700" text-anchor="start" fill="#F3F7F4">2</text>
+<text x="56" y="174" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#A8BBB0">Original public</text>
+<text x="56" y="207" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#A8BBB0">repositories</text>
+<text x="288" y="174" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#A8BBB0">Primary</text>
+<text x="288" y="207" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#A8BBB0">languages</text>
+<path d="M521 48V280" fill="none" stroke="#2B4A38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="565" y="52" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#A8BBB0">REPOSITORIES BY PRIMARY LANGUAGE</text>
+<text x="565" y="96" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#F3F7F4">Python</text>
+<rect x="778" y="80" width="310" height="12" rx="6" fill="#193426" stroke="#193426" stroke-width="0"/>
+<rect x="778" y="80" width="310.0" height="12" rx="6" fill="#45C47A" stroke="#45C47A" stroke-width="0"/>
+<text x="1113" y="96" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#F3F7F4">7</text>
+<text x="565" y="130" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#F3F7F4">HTML</text>
+<rect x="778" y="114" width="310" height="12" rx="6" fill="#193426" stroke="#193426" stroke-width="0"/>
+<rect x="778" y="114" width="88.57142857142857" height="12" rx="6" fill="#45C47A" stroke="#45C47A" stroke-width="0"/>
+<text x="1113" y="130" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#F3F7F4">2</text>
+<text x="56" y="315" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#A8BBB0">Updated 2026-11-11 UTC • Forks excluded</text>
+<text x="778" y="315" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#45C47A">Definitions linked below ↘</text>
 </svg>

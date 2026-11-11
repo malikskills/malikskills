@@ -21,12 +21,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: malik-dev-profile-artwork
+  group: profile-artwork-${{ github.repository_id }}
   cancel-in-progress: false
 
 jobs:
   generate:
-    if: github.repository == 'workcmtiayon-arch/workcmtiayon-arch' && github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -40,7 +40,7 @@ jobs:
       - name: Generate contribution snake
         uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
-          github_user_name: workcmtiayon-arch
+          github_user_name: ${{ github.repository_owner }}
           github_token: ${{ github.token }}
           outputs: |
             assets/generated/snake-light.svg?color_snake=%23167A46&color_dots=%23E1EEE6,%23B7E4C7,%2376C99B,%2345C47A,%230F6237

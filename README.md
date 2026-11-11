@@ -60,7 +60,7 @@ Python and Django are my main area of practice. The map distinguishes direct pra
   </picture>
 </a>
 
-[Snapshot & metric definitions](assets/generated/activity.md) · [GitHub repositories](https://github.com/workcmtiayon-arch?tab=repositories)
+[Snapshot & metric definitions](assets/generated/activity.md) · [GitHub repositories](https://github.com/malikskills?tab=repositories)
 
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/generated/contributions-dark.svg">
@@ -76,4 +76,4 @@ Python and Django are my main area of practice. The map distinguishes direct pra
 **Have a problem worth solving?**<br>
 Let's understand it and build a reliable solution.
 
-[GitHub](https://github.com/workcmtiayon-arch)
+[GitHub](https://github.com/malikskills)

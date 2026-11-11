@@ -1,8 +1,17 @@
 # Public repository snapshot
 
-No verified GitHub REST API snapshot has been published yet.
+Updated **2026-11-11 UTC** from the GitHub REST API.
 
-- Last attempt: **2026-11-11T10:55:09Z**.
-- Reason: Initial local build has no GitHub API access (DNS resolution unavailable)
+- Original public repositories: **9**.
+- Distinct primary languages: **2**.
 
-Repository counts, language counts and contribution totals are intentionally omitted. Run `python3 scripts/generate_activity.py` with network access, or run the configured GitHub Actions workflow.
+| Primary language | Repositories |
+| --- | ---: |
+| Python | 7 |
+| HTML | 2 |
+
+Public repositories owned by the configured account; forks are excluded and archived originals are included.
+
+GitHub assigns one primary language to each repository. These repository counts do not measure proficiency, all languages used, lines of code, commits or project completion.
+
+[Source](https://api.github.com/users/malikskills/repos?type=owner&per_page=100). Pagination is followed. A failed later refresh keeps the last valid files.

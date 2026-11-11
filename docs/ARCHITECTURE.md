@@ -28,6 +28,6 @@ The contribution workflow relies on `Platane/snk/svg-only` to query GitHub's con
 
 ## Automation and authority
 
-The workflows are intentionally scoped to `workcmtiayon-arch/workcmtiayon-arch` on `main`. The generation job has `contents: read`. A separate publish job gains `contents: write` only after a manual dispatch with `publish: true`, or after the owner explicitly enables the `PROFILE_AUTO_COMMIT=true` repository Actions variable. It stages only `assets/generated/`.
+The workflows run on `main` and derive the GitHub account from the repository owner, so they remain valid after an account rename. The generation job has `contents: read`. A separate publish job gains `contents: write` only after a manual dispatch with `publish: true`, or after the owner explicitly enables the `PROFILE_AUTO_COMMIT=true` repository Actions variable. It stages only `assets/generated/`.
 
 The source repository audited for the requested functional reference did not provide a licence file. This project therefore recreates the architecture, prose and artwork independently; it contains no copied reference SVG, Python source or generated data.

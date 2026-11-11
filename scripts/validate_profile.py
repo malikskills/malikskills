@@ -57,8 +57,8 @@ def validate_profile_data(profile: object) -> dict:
     assert isinstance(identity, dict)
     for key in ("brand", "name", "github_username", "github_url", "location", "role", "positioning", "tagline"):
         assert isinstance(identity.get(key), str) and identity[key].strip(), f"identity.{key} must be a nonempty string"
-    assert identity["github_username"] == "workcmtiayon-arch", "Configured GitHub identity must remain correct"
-    assert identity["github_url"] == "https://github.com/workcmtiayon-arch", "Configured GitHub URL must remain correct"
+    assert identity["github_username"] == "malikskills", "Configured GitHub identity must remain correct"
+    assert identity["github_url"] == "https://github.com/malikskills", "Configured GitHub URL must remain correct"
     assert len(profile["about"]) == 4 and all(isinstance(line, str) and line for line in profile["about"])
     contacts = profile["contacts"]
     assert contacts["github"] == identity["github_url"]

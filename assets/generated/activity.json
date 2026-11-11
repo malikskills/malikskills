@@ -1,7 +1,13 @@
 {
-  "status": "unavailable",
-  "username": "workcmtiayon-arch",
-  "last_attempt": "2026-11-11T10:55:09Z",
-  "reason": "Initial local build has no GitHub API access (DNS resolution unavailable)",
-  "scope": "No repository or language counts are shown until a successful public GitHub API refresh."
+  "status": "success",
+  "username": "malikskills",
+  "updated": "2026-11-11",
+  "source": "https://api.github.com/users/malikskills/repos?type=owner&per_page=100",
+  "scope": "Public repositories owned by the configured account; forks are excluded and archived originals are included.",
+  "repositories": 9,
+  "primary_languages": 2,
+  "language_counts": {
+    "Python": 7,
+    "HTML": 2
+  }
 }
