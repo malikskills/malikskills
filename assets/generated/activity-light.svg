@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
 <title id="title">Public GitHub / Repository snapshot</title>
-<desc id="desc">Updated 2026-11-12 UTC. 11 public original repositories, forks excluded; 3 primary languages. Repository counts are not proficiency or code-volume measures.</desc>
+<desc id="desc">Updated 2026-11-13 UTC. 11 public original repositories, forks excluded; 3 primary languages. Repository counts are not proficiency or code-volume measures.</desc>
 <rect x="1" y="1" width="1198" height="338" rx="24" fill="#F5F8F4" stroke="#C6D9CC" stroke-width="2"/>
 <text x="56" y="52" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#466254">PUBLIC GITHUB / VERIFIED SNAPSHOT</text>
 <text x="56" y="132" font-family="Arial, Helvetica, sans-serif" font-size="63" font-weight="700" text-anchor="start" fill="#10261A">11</text>
@@ -23,6 +23,6 @@
 <rect x="778" y="148" width="310" height="12" rx="6" fill="#E1EEE6" stroke="#E1EEE6" stroke-width="0"/>
 <rect x="778" y="148" width="38.75" height="12" rx="6" fill="#167A46" stroke="#167A46" stroke-width="0"/>
 <text x="1113" y="164" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#10261A">1</text>
-<text x="56" y="315" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#466254">Updated 2026-11-12 UTC • Forks excluded</text>
+<text x="56" y="315" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#466254">Updated 2026-11-13 UTC • Forks excluded</text>
 <text x="778" y="315" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#167A46">Definitions linked below ↘</text>
 </svg>
